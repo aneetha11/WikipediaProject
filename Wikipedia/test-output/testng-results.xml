@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-16T23:38:51Z" name="Suite" finished-at="2022-05-16T23:40:00Z" duration-ms="68948">
+    <groups>
+      <group name="Sanity">
+        <method signature="TC_Login_02.loginTest()[pri:0, instance:com.wiki.testCases.TC_Login_02@3f57bcad]" name="loginTest" class="com.wiki.testCases.TC_Login_02"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TC_HomePageLinks_05.statusLinks()[pri:0, instance:com.wiki.testCases.TC_HomePageLinks_05@71e9ebae]" name="statusLinks" class="com.wiki.testCases.TC_HomePageLinks_05"/>
+        <method signature="TC_LoginDDT_03.loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.wiki.testCases.TC_LoginDDT_03@1e8b7643]" name="loginDDT" class="com.wiki.testCases.TC_LoginDDT_03"/>
+        <method signature="TC_SearchBox_04.search(java.lang.String)[pri:0, instance:com.wiki.testCases.TC_SearchBox_04@51549490]" name="search" class="com.wiki.testCases.TC_SearchBox_04"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="TC_Index_01.verifyLogo()[pri:0, instance:com.wiki.testCases.TC_Index_01@50de186c]" name="verifyLogo" class="com.wiki.testCases.TC_Index_01"/>
+        <method signature="TC_Index_01.verifyTitle()[pri:0, instance:com.wiki.testCases.TC_Index_01@50de186c]" name="verifyTitle" class="com.wiki.testCases.TC_Index_01"/>
+        <method signature="TC_Login_02.loginTest()[pri:0, instance:com.wiki.testCases.TC_Login_02@3f57bcad]" name="loginTest" class="com.wiki.testCases.TC_Login_02"/>
+        <method signature="TC_SearchBox_04.search(java.lang.String)[pri:0, instance:com.wiki.testCases.TC_SearchBox_04@51549490]" name="search" class="com.wiki.testCases.TC_SearchBox_04"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-05-16T23:38:51Z" name="Test" finished-at="2022-05-16T23:40:00Z" duration-ms="68948">
+      <class name="com.wiki.testCases.TC_Login_02">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.wiki.testCases.TC_Login_02@3f57bcad]" started-at="2022-05-16T23:38:56Z" name="setup" finished-at="2022-05-16T23:38:58Z" duration-ms="2222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:com.wiki.testCases.TC_Login_02@3f57bcad]" started-at="2022-05-16T23:38:58Z" name="loginTest" finished-at="2022-05-16T23:39:08Z" duration-ms="10013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.wiki.testCases.TC_Login_02@3f57bcad]" started-at="2022-05-16T23:39:08Z" name="tearDown" finished-at="2022-05-16T23:39:08Z" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.wiki.testCases.TC_Login_02 -->
+      <class name="com.wiki.testCases.TC_HomePageLinks_05">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.wiki.testCases.TC_HomePageLinks_05@71e9ebae]" started-at="2022-05-16T23:39:36Z" name="setup" finished-at="2022-05-16T23:39:38Z" duration-ms="2145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="statusLinks()[pri:0, instance:com.wiki.testCases.TC_HomePageLinks_05@71e9ebae]" started-at="2022-05-16T23:39:38Z" name="statusLinks" finished-at="2022-05-16T23:39:56Z" duration-ms="17273" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.wiki.testCases.TC_HomePageLinks_05.statusLinks(TC_HomePageLinks_05.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusLinks -->
+        <test-method signature="countLinks()[pri:1, instance:com.wiki.testCases.TC_HomePageLinks_05@71e9ebae]" started-at="2022-05-16T23:39:56Z" name="countLinks" finished-at="2022-05-16T23:39:56Z" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.wiki.testCases.TC_HomePageLinks_05@71e9ebae]" started-at="2022-05-16T23:39:56Z" name="tearDown" finished-at="2022-05-16T23:40:00Z" duration-ms="4096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.wiki.testCases.TC_HomePageLinks_05 -->
+      <class name="com.wiki.testCases.TC_SearchBox_04">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.wiki.testCases.TC_SearchBox_04@51549490]" started-at="2022-05-16T23:39:26Z" name="setup" finished-at="2022-05-16T23:39:28Z" duration-ms="2152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="search(java.lang.String)[pri:0, instance:com.wiki.testCases.TC_SearchBox_04@51549490]" started-at="2022-05-16T23:39:28Z" name="search" data-provider="SearchData" finished-at="2022-05-16T23:39:30Z" duration-ms="1635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amazon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="search(java.lang.String)[pri:0, instance:com.wiki.testCases.TC_SearchBox_04@51549490]" started-at="2022-05-16T23:39:30Z" name="search" data-provider="SearchData" finished-at="2022-05-16T23:39:32Z" duration-ms="2316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.wiki.testCases.TC_SearchBox_04@51549490]" started-at="2022-05-16T23:39:32Z" name="tearDown" finished-at="2022-05-16T23:39:36Z" duration-ms="4112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.wiki.testCases.TC_SearchBox_04 -->
+      <class name="com.wiki.testCases.TC_LoginDDT_03">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.wiki.testCases.TC_LoginDDT_03@1e8b7643]" started-at="2022-05-16T23:39:08Z" name="setup" finished-at="2022-05-16T23:39:10Z" duration-ms="2273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.wiki.testCases.TC_LoginDDT_03@1e8b7643]" started-at="2022-05-16T23:39:11Z" name="loginDDT" data-provider="LoginData" finished-at="2022-05-16T23:39:13Z" duration-ms="2288" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.wiki.testCases.TC_LoginDDT_03.loginDDT(TC_LoginDDT_03.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.wiki.testCases.TC_LoginDDT_03@1e8b7643]" started-at="2022-05-16T23:39:13Z" name="loginDDT" data-provider="LoginData" finished-at="2022-05-16T23:39:22Z" duration-ms="8832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Technical test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wikipedia@11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.wiki.testCases.TC_LoginDDT_03@1e8b7643]" started-at="2022-05-16T23:39:22Z" name="tearDown" finished-at="2022-05-16T23:39:26Z" duration-ms="4157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.wiki.testCases.TC_LoginDDT_03 -->
+      <class name="com.wiki.testCases.TC_Index_01">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.wiki.testCases.TC_Index_01@50de186c]" started-at="2022-05-16T23:38:51Z" name="setup" finished-at="2022-05-16T23:38:55Z" duration-ms="4192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogo()[pri:0, instance:com.wiki.testCases.TC_Index_01@50de186c]" started-at="2022-05-16T23:38:55Z" name="verifyLogo" finished-at="2022-05-16T23:38:55Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+        <test-method signature="verifyTitle()[pri:0, instance:com.wiki.testCases.TC_Index_01@50de186c]" started-at="2022-05-16T23:38:55Z" name="verifyTitle" finished-at="2022-05-16T23:38:55Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.wiki.testCases.TC_Index_01@50de186c]" started-at="2022-05-16T23:38:55Z" name="tearDown" finished-at="2022-05-16T23:38:56Z" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.wiki.testCases.TC_Index_01 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

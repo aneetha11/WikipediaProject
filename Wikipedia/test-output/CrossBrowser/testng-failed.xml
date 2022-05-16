@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [CrossBrowser]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.wiki.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="6" parallel="tests" name="FirefoxTest(failed)">
+    <classes>
+      <class name="com.wiki.testCases.TC_Index_01">
+        <methods>
+          <include name="verifyLogo"/>
+          <include name="setup"/>
+          <include name="verifyTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.wiki.testCases.TC_Index_01 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowser] -->
